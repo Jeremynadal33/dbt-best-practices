@@ -1,0 +1,7 @@
+on:
+  pull_request
+jobs:
+  ci_tests:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo 'Is this triggered at any push on a pr?'
