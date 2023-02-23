@@ -1,0 +1,3 @@
+venv/
+.dbt_profiles/.user.yml
+.dbt_profiles/profiles.yml

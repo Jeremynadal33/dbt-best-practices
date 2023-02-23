@@ -1,0 +1,81 @@
+
+
+============================== 2023-02-23 13:59:20.956558 | 72a45697-705e-421b-a2a2-063d98d186a5 ==============================
+[0m13:59:20.956576 [info ] [MainThread]: Running with dbt=1.3.2
+[0m13:59:20.958565 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/mnt/c/Users/j.nadal/OneDrive - BetClic Everest Group/Documents/dbt-best-practices/.dbt_profiles', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'skip_profile_setup': False, 'which': 'init', 'indirect_selection': 'eager'}
+[0m13:59:20.960570 [debug] [MainThread]: Tracking: tracking
+[0m13:59:20.974305 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe452fceec0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe452fcec20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe452fceda0>]}
+[0m13:59:20.977433 [info ] [MainThread]: Creating dbt configuration folder at /mnt/c/Users/j.nadal/OneDrive - BetClic Everest Group/Documents/dbt-best-practices/.dbt_profiles
+[0m13:59:26.864620 [debug] [MainThread]: Starter project path: /usr/local/lib/python3.10/dist-packages/dbt/include/starter_project
+[0m14:09:10.803902 [info ] [MainThread]: Profile ls written to /mnt/c/Users/j.nadal/OneDrive - BetClic Everest Group/Documents/dbt-best-practices/.dbt_profiles/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m14:09:10.806632 [info ] [MainThread]: 
+Your new dbt project "ls" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m14:09:10.809005 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe452fcc7c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe452fceb00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe452fcc280>]}
+[0m14:09:10.811120 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2023-02-23 14:09:17.995769 | 9546ab20-9bad-4b1b-8e67-935aae717aa6 ==============================
+[0m14:09:17.995798 [info ] [MainThread]: Running with dbt=1.3.2
+[0m14:09:17.998298 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/mnt/c/Users/j.nadal/OneDrive - BetClic Everest Group/Documents/dbt-best-practices/.dbt_profiles', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'config_dir': False, 'which': 'debug', 'indirect_selection': 'eager'}
+[0m14:09:18.000149 [debug] [MainThread]: Tracking: tracking
+[0m14:09:18.004314 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff06a1cf790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff06a1cfa60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff06a1cf8b0>]}
+[0m14:09:18.492745 [debug] [MainThread]: Executing "git --help"
+[0m14:09:18.497153 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m14:09:18.499230 [debug] [MainThread]: STDERR: "b''"
+[0m14:09:18.503204 [debug] [MainThread]: Acquiring new snowflake connection "debug"
+[0m14:09:18.506537 [debug] [MainThread]: Using snowflake connection "debug"
+[0m14:09:18.509118 [debug] [MainThread]: On debug: select 1 as id
+[0m14:09:18.511280 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m14:09:19.685587 [debug] [MainThread]: Snowflake adapter: Error running SQL: select 1 as id
+[0m14:09:19.690790 [debug] [MainThread]: Snowflake adapter: Rolling back transaction.
+[0m14:09:19.696091 [debug] [MainThread]: On debug: No close available on handle
+[0m14:09:19.701669 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff068adcc10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff068adf070>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff068adcfd0>]}
+[0m14:09:19.710151 [debug] [MainThread]: Flushing usage events
+[0m14:09:20.296568 [debug] [MainThread]: Connection 'debug' was properly closed.
+
+
+============================== 2023-02-23 15:07:40.988078 | 86bedf3e-f7d7-4f3c-a0d0-102cab5fc5e8 ==============================
+[0m15:07:40.988078 [info ] [MainThread]: Running with dbt=1.4.1
+[0m15:07:40.992286 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/mnt/c/Users/j.nadal/OneDrive - BetClic Everest Group/Documents/dbt-best-practices/.dbt_profiles', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'skip_profile_setup': False, 'which': 'init', 'indirect_selection': 'eager'}
+[0m15:07:40.994707 [debug] [MainThread]: Tracking: tracking
+[0m15:07:41.001140 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd2ae3346d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd2ae336950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd2ae334370>]}
+[0m15:08:21.613290 [debug] [MainThread]: Starter project path: /mnt/c/Users/j.nadal/OneDrive - BetClic Everest Group/Documents/dbt-best-practices/venv/lib/python3.10/site-packages/dbt/include/starter_project
+[0m15:08:42.006617 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd2ad12f6a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd2ad12f7c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd2ad12efe0>]}
+[0m15:08:42.010091 [debug] [MainThread]: Flushing usage events
+[0m15:08:42.820542 [error] [MainThread]: Encountered an error:
+
+[0m15:08:42.922485 [error] [MainThread]: Traceback (most recent call last):
+  File "/mnt/c/Users/j.nadal/OneDrive - BetClic Everest Group/Documents/dbt-best-practices/venv/lib/python3.10/site-packages/dbt/main.py", line 135, in main
+    results, succeeded = handle_and_check(args)
+  File "/mnt/c/Users/j.nadal/OneDrive - BetClic Everest Group/Documents/dbt-best-practices/venv/lib/python3.10/site-packages/dbt/main.py", line 198, in handle_and_check
+    task, res = run_from_args(parsed)
+  File "/mnt/c/Users/j.nadal/OneDrive - BetClic Everest Group/Documents/dbt-best-practices/venv/lib/python3.10/site-packages/dbt/main.py", line 245, in run_from_args
+    results = task.run()
+  File "/mnt/c/Users/j.nadal/OneDrive - BetClic Everest Group/Documents/dbt-best-practices/venv/lib/python3.10/site-packages/dbt/task/init.py", line 305, in run
+    self.create_profile_from_target(adapter, profile_name=project_name)
+  File "/mnt/c/Users/j.nadal/OneDrive - BetClic Everest Group/Documents/dbt-best-practices/venv/lib/python3.10/site-packages/dbt/task/init.py", line 180, in create_profile_from_target
+    self.create_profile_from_profile_template(profile_template, profile_name)
+  File "/mnt/c/Users/j.nadal/OneDrive - BetClic Everest Group/Documents/dbt-best-practices/venv/lib/python3.10/site-packages/dbt/task/init.py", line 164, in create_profile_from_profile_template
+    target = self.generate_target_from_input(prompts, initial_target)
+  File "/mnt/c/Users/j.nadal/OneDrive - BetClic Everest Group/Documents/dbt-best-practices/venv/lib/python3.10/site-packages/dbt/task/init.py", line 130, in generate_target_from_input
+    target[key] = click.prompt(
+  File "/mnt/c/Users/j.nadal/OneDrive - BetClic Everest Group/Documents/dbt-best-practices/venv/lib/python3.10/site-packages/click/termui.py", line 166, in prompt
+    value = prompt_func(prompt)
+  File "/mnt/c/Users/j.nadal/OneDrive - BetClic Everest Group/Documents/dbt-best-practices/venv/lib/python3.10/site-packages/click/termui.py", line 149, in prompt_func
+    raise Abort() from None
+click.exceptions.Abort
+

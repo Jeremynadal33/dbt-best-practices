@@ -1,0 +1,3 @@
+dbt-snowflake>=1.3.0
+sqlfluff==1.3.2
+pre-commit
