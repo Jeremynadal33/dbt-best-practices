@@ -4,7 +4,7 @@ on:
 env:
   DBT_PROFILES_DIR: ./cicd/
   DBT_PASSWORD: ${{ secrets.DBT_PASSWORD }}
-  DBT_SCHEMA: DBT_$(echo $GITHUB_REF | awk 'BEGIN { FS = "/" } ; { print $3 }')
+  DBT_SCHEMA: DBT_${{github.event.number}}
 
 jobs:
   is_this_triggered:
@@ -12,6 +12,7 @@ jobs:
     steps:
       - run: echo 'Is this triggered at any push on a pr?'
   ci_tests:
+    runs-on: ubuntu-latest
     steps:
       - name: Check out
         uses: actions/checkout@v3

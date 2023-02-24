@@ -5,7 +5,7 @@ dbt_best_practices:
       database: MLOPEZ_DB
       password: "{{ env_var('DBT_PASSWORD') }}"
       role: MLOPEZ_ROLE
-      schema: test_dbt
+      schema: "{{ env_var('DBT_SCHEMA') }}"
       threads: 2
       type: snowflake
       user: MLOPEZ
