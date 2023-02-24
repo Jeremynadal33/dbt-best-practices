@@ -18,3 +18,7 @@ Try running the following commands:
 - [ ] Add interesting macros and their documentation
 - [ ] Add CD step ? => deploy views
 - [ ] Add a step to store manifest in artifacts
+- [ ] Slim CI
+- [ ] CD to store doc on a GitHub page ?
+- [ ] 
+- [ ] Cache dependencies to fasten CI! 
