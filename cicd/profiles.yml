@@ -1,0 +1,13 @@
+dbt_best_practices:
+  outputs:
+    dev:
+      account: ipponpartner.eu-west-1
+      database: MLOPEZ_DB
+      password: "{{ env_var('DBT_PASSWORD') }}"
+      role: MLOPEZ_ROLE
+      schema: test_dbt
+      threads: 2
+      type: snowflake
+      user: MLOPEZ
+      warehouse: MLOPEZ_WH_XS
+  target: dev

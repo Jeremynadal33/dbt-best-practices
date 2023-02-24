@@ -1,3 +1,6 @@
 venv/
 .dbt_profiles/.user.yml
 .dbt_profiles/profiles.yml
+dbt_packages/
+logs/
+target/
