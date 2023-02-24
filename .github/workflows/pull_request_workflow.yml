@@ -1,10 +1,11 @@
+name: CI step
+run-name: ${{ github.actor }} is pushing some new features
 on:
   pull_request
-
 env:
   DBT_PROFILES_DIR: ./cicd/
   DBT_PASSWORD: ${{ secrets.DBT_PASSWORD }}
-  DBT_SCHEMA: DBT_${{github.event.number}}
+  DBT_SCHEMA: DBT_CI_${{github.event.number}}
 
 jobs:
   is_this_triggered:
@@ -32,7 +33,7 @@ jobs:
         run: dbt run
 
       - name: Test dbt models
-        run: dbt test
+        run: dbt test --store-failures
 
       - name: SQLFluff linting
-        run: sqlfluff lint
+        run: sqlfluff lint models/*
