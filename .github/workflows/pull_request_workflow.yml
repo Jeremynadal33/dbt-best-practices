@@ -1,0 +1,39 @@
+name: CI step
+run-name: ${{ github.actor }} is pushing some new features
+on:
+  pull_request
+env:
+  DBT_PROFILES_DIR: ./cicd/
+  DBT_PASSWORD: ${{ secrets.DBT_PASSWORD }}
+  DBT_SCHEMA: DBT_CI_${{github.event.number}}
+
+jobs:
+  is_this_triggered:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo 'Is this triggered at any push on a pr?'
+  ci_tests:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out
+        uses: actions/checkout@v3
+
+      - uses: actions/setup-python@v1
+        with:
+          python-version: "3.9.x"
+
+      - name: Install dependencies
+        run: |
+          pip install dbt-snowflake
+          pip install sqlfluff
+          dbt deps
+      
+      # Add dbt seed or other commands here if needed
+      - name: Run dbt models
+        run: dbt run
+
+      - name: Test dbt models
+        run: dbt test --store-failures
+
+      - name: SQLFluff linting
+        run: sqlfluff lint models/*

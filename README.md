@@ -13,3 +13,12 @@ Try running the following commands:
 - Join the [chat](https://community.getdbt.com/) on Slack for live discussions and support
 - Find [dbt events](https://events.getdbt.com) near you
 - Check out [the blog](https://blog.getdbt.com/) for the latest news on dbt's development and best practices
+
+## TODO
+- [ ] Add interesting macros and their documentation
+- [ ] Add CD step ? => deploy views
+- [ ] Add a step to store manifest in artifacts
+- [ ] Slim CI
+- [ ] CD to store doc on a GitHub page ?
+- [ ] 
+- [ ] Cache dependencies to fasten CI! 
